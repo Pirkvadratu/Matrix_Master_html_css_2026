@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Top Header */
+.top-header {
+    display: block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    white-space: nowrap;
+}
+
+.header-left {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.paypal-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #003087;
+}
+
+.header-right {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 400px;
+}
+
+.header-link {
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 13px;
+    margin: 0 3px;
+}
+
+.separator {
+    color: #666666;
+    margin: 0 5px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: block;
+    background-color: #003087;
+    padding: 0;
+}
+
+.nav-tab {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-right: 1px solid #0044aa;
+}
+
+.nav-tab:hover {
+    background-color: #0044aa;
+}
+
+.nav-tab.active {
+    background-color: #0066cc;
+}
+
+/* Main Content */
+.main-content {
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    background-color: #e8e8e8;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.sidebar-section {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000000;
+}
+
+.sidebar-button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #003087;
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sidebar-button:hover {
+    background-color: #0044aa;
+}
+
+.news-section {
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #cccccc;
+}
+
+.news-title {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.more-link {
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.news-list {
+    list-style: none;
+    font-size: 11px;
+    line-height: 1.8;
+    color: #333333;
+}
+
+.news-list li {
+    margin-bottom: 5px;
+}
+
+.credit-cards {
+    display: block;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #cccccc;
+}
+
+.card-logo {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Content Area */
+.content-area {
+    display: inline-block;
+    vertical-align: top;
+    width: 750px;
+}
+
+.main-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #000000;
+}
+
+.feature-section {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.feature-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #003087;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feature-text {
+    font-size: 14px;
+    color: #333333;
+}
+
+.promo-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #003087;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.promo-button:hover {
+    background-color: #0044aa;
+}
+
+.membership-text {
+    font-size: 14px;
+    margin: 15px 0;
+    color: #333333;
+}
+
+.blue-link {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.signup-button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px;
+    background-color: #ffcc00;
+    color: #003087;
+    border: 2px solid #003087;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.signup-button:hover {
+    background-color: #ffd633;
+}
+
+.spotlight-section {
+    display: block;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+.spotlight-item {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.spotlight-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #003087;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.spotlight-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: #003087;
+    text-decoration: underline;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.spotlight-text {
+    display: inline-block;
+    font-size: 13px;
+    color: #333333;
+    width: 85%;
+    vertical-align: top;
+}
+
+/* Footer */
+.footer {
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+    text-align: center;
+}
+
+.footer-links {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-link {
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #666666;
+    margin: 10px 0;
+}
+
+.fdic-link {
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 11px;
+    display: block;
+    margin: 10px 0;
+}
+
+.security-section {
+    display: block;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+.insurance-section {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.insurance-text {
+    font-size: 11px;
+    color: #333333;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.insurance-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.trust-logos {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.trust-logo {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Header */
+.header {
+    display: block;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+
+.header-left {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.linkedin-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-square {
+    display: inline-block;
+    background-color: #0077b5;
+    color: #ffffff;
+    padding: 5px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077b5;
+}
+
+.header-right {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 300px;
+}
+
+.header-link {
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 13px;
+    margin: 0 3px;
+}
+
+.separator {
+    color: #666666;
+    margin: 0 5px;
+}
+
+/* Main Content */
+.main-content {
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.content-box {
+    display: block;
+    border: 2px solid #b3d9ff;
+    border-top: 4px solid #0077b5;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+/* Left Column */
+.left-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 55%;
+    margin-right: 5%;
+}
+
+.main-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077b5;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.features-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.feature-item {
+    display: block;
+    margin-bottom: 15px;
+    padding-left: 30px;
+}
+
+.feature-icon {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.feature-text {
+    display: inline-block;
+    font-size: 14px;
+    color: #333333;
+    vertical-align: middle;
+}
+
+/* Right Column */
+.right-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.form-heading {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0077b5;
+    margin-bottom: 15px;
+}
+
+.signup-form {
+    display: block;
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #cccccc;
+    font-size: 13px;
+}
+
+.continue-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 3px;
+}
+
+.continue-button:hover {
+    background-color: #4cae4c;
+}
+
+.signin-link {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.link {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+/* Search Section */
+.search-section {
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.search-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.search-form {
+    display: inline-block;
+}
+
+.search-input {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    font-size: 12px;
+    margin-right: 5px;
+    width: 150px;
+}
+
+.go-button {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #0077b5;
+    color: #ffffff;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.go-button:hover {
+    background-color: #005885;
+}
+
+/* Directory Section */
+.directory-section {
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.directory-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.directory-letters {
+    display: inline-block;
+}
+
+.directory-link {
+    display: inline-block;
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 13px;
+    margin-right: 8px;
+}
+
+/* Footer */
+.footer {
+    display: block;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+}
+
+.footer-section {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.footer-links {
+    display: inline-block;
+}
+
+.footer-link {
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.footer-bottom {
+    display: block;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #cccccc;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.terms {
+    font-size: 11px;
+    color: #666666;
+    font-style: italic;
+}

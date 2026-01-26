@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment2 - AirBed & Breakfast</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1 class="main-heading">AirBed & Breakfast – Find a place to stay.</h1>
+            <div class="header-links">
+                <a href="#" class="link">Sign Up</a>
+                <a href="#" class="link">Sign In</a>
+            </div>
+            <p class="unavailable-text">This listing is no longer available.</p>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Column -->
+            <div class="left-column">
+                <h2 class="section-heading">Find a place to stay.</h2>
+                <p class="description">Rent nightly from real people in 830 cities in 73 countries.</p>
+                
+                <!-- Search Form -->
+                <form class="search-form">
+                    <div class="form-group">
+                        <input type="text" class="input-field" placeholder="Where are you going?" id="location">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">Check in</label>
+                            <input type="text" class="input-field" placeholder="mm/dd/yyyy" id="checkin">
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">Check out</label>
+                            <input type="text" class="input-field" placeholder="mm/dd/yyyy" id="checkout">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Guests</label>
+                        <input type="number" class="input-field number-input" value="1" min="1" id="guests">
+                    </div>
+                </form>
+
+                <!-- San Francisco Listing -->
+                <div class="sf-listing">
+                    <div class="sf-content">
+                        <h3 class="sf-title">San Francisco, CA</h3>
+                        <p class="sf-price">Rooms from $29/night</p>
+                    </div>
+                    <img src="https://via.placeholder.com/150x100/4A90E2/FFFFFF?text=SF" alt="San Francisco" class="sf-image">
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <!-- Large Main Image -->
+                <div class="main-image-container">
+                    <img src="https://via.placeholder.com/400x500/87CEEB/FFFFFF?text=Pool" alt="Swimming pool" class="main-image">
+                </div>
+
+                <!-- Listings Stack -->
+                <div class="listings-stack">
+                    <!-- Listing 1 -->
+                    <div class="listing-item">
+                        <img src="https://via.placeholder.com/80x60/FFB6C1/FFFFFF?text=People" alt="Frances & Greg" class="listing-image">
+                        <div class="listing-content">
+                            <p class="listing-name pink-text">Frances & Greg, Los Angeles</p>
+                            <p class="listing-info">Recently reviewed</p>
+                        </div>
+                    </div>
+
+                    <!-- Listing 2 -->
+                    <div class="listing-item">
+                        <img src="https://via.placeholder.com/80x60/FFD700/FFFFFF?text=DC" alt="Washington DC" class="listing-image">
+                        <div class="listing-content">
+                            <p class="listing-name">Washington DC</p>
+                            <p class="listing-info">From $10/night</p>
+                        </div>
+                    </div>
+
+                    <!-- Listing 3 -->
+                    <div class="listing-item">
+                        <img src="https://via.placeholder.com/80x60/FF6347/FFFFFF?text=Paris" alt="Paris" class="listing-image">
+                        <div class="listing-content">
+                            <p class="listing-name">Paris, France</p>
+                            <p class="listing-info">Rooms from $20/night</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Listing -->
+                <div class="bottom-listing">
+                    <img src="https://via.placeholder.com/50x50/FF69B4/FFFFFF?text=G" alt="Gab's profile" class="profile-image">
+                    <div class="bottom-listing-content">
+                        <p class="bottom-listing-title">"Gabs place" - Amsterdam, Netherlands</p>
+                        <p class="bottom-listing-price">$85/night</p>
+                        <p class="bottom-listing-review">1 Review</p>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn">←</button>
+                        <button class="carousel-btn">⏸</button>
+                        <button class="carousel-btn">→</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- As Seen On -->
+            <div class="as-seen-on">
+                <span class="footer-label">As seen on:</span>
+                <div class="logos">
+                    <span class="logo-text">CNN</span>
+                    <span class="logo-text">The New York Times</span>
+                    <span class="logo-text">TechCrunch</span>
+                    <span class="logo-text">Newsweek</span>
+                    <span class="logo-text">The Wall Street Journal</span>
+                    <span class="logo-text">NBC</span>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">About</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                    <li><a href="#" class="footer-link">Contact</a></li>
+                    <li><a href="#" class="footer-link">Terms & Privacy</a></li>
+                </ul>
+                <div class="footer-sections">
+                    <span class="footer-label">Biggest Deals:</span>
+                    <a href="#" class="footer-link">New York</a>
+                    <a href="#" class="footer-link">San Francisco</a>
+                    <a href="#" class="footer-link">Paris</a>
+                </div>
+                <div class="footer-sections">
+                    <span class="footer-label">Join us on:</span>
+                    <a href="#" class="footer-link">Twitter</a>
+                    <a href="#" class="footer-link">Facebook</a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="copyright">© AirBed & Breakfast, Inc.</p>
+        </footer>
+    </div>
+</body>
+</html>

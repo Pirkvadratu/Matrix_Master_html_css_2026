@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8e8e8;
+    color: #000000;
+    line-height: 1.4;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* Header Styles */
+.header {
+    display: block;
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-bottom: 1px solid #cccccc;
+    white-space: nowrap;
+}
+
+.header-left {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.craigslist-logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #800080;
+}
+
+.header-center {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    background-color: #d0d0d0;
+    padding: 8px 15px;
+}
+
+.location-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.header-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.other-craigslists-label {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.other-craigslists-select {
+    padding: 2px 5px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.go-button {
+    padding: 2px 10px;
+    font-size: 12px;
+    background-color: #e8e8e8;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: block;
+    background-color: #e8e8e8;
+}
+
+/* Sidebar */
+.sidebar {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    background-color: #d0d0d0;
+    padding: 15px;
+    min-height: 600px;
+}
+
+.sidebar-top-links {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar-link {
+    display: block;
+    color: #0066cc;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.search-section {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.search-label {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.search-input {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    border: 1px solid #999999;
+}
+
+.search-select {
+    display: block;
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    border: 1px solid #999999;
+}
+
+.search-button {
+    display: block;
+    padding: 3px 10px;
+    font-size: 12px;
+    background-color: #e8e8e8;
+    border: 1px solid #999999;
+    cursor: pointer;
+}
+
+.sidebar-bottom-links {
+    display: block;
+}
+
+.updated-date {
+    font-size: 11px;
+    color: #666666;
+    margin-top: 10px;
+}
+
+/* Columns Container */
+.columns-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 800px;
+    padding: 15px;
+}
+
+.column {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+/* Category Sections */
+.category-section {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #d0d0d0;
+    padding: 5px 8px;
+    margin-bottom: 5px;
+}
+
+.category-list {
+    display: block;
+    list-style: none;
+    padding-left: 8px;
+}
+
+.category-list li {
+    display: block;
+    margin-bottom: 3px;
+}
+
+.category-link {
+    display: inline;
+    color: #0066cc;
+    text-decoration: underline;
+    font-size: 12px;
+}
