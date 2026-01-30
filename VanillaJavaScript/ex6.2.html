@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt and Alert</title>
+</head>
+<body>
+    <h1>Prompt and Alert</h1>
+    <button onclick="greetUser()">Click me to enter your name!</button>
+
+    <script>
+        function greetUser() 
+        {
+            let name = window.prompt("What is your name?");
+            
+            if (name) 
+            {
+                window.alert("Hello, " + name + "!");
+            } else 
+            {
+                window.alert("No name entered.");
+            }
+        }
+    </script>
+</body>
+</html>

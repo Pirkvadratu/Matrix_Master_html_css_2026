@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object</title>
+</head>
+<body>
+    <h1>Window Object</h1>
+    <button onclick="showWindowInfo()">Show info</button>
+    <button onclick="openNewWindow()">Open New Window</button>
+    <button onclick="setTimeoutExample()">Set Timeout Example</button>
+    <div id="info"></div>
+
+    <script>
+        function showWindowInfo() 
+        {
+            let info = document.getElementById("info");
+            info.innerHTML = `
+                <h2>Window info</h2>
+                <p>Current URL: ${window.location.href}</p>
+                <p>Window Width: ${window.innerWidth}px</p>
+                <p>Window Height: ${window.innerHeight}px</p>
+                <p>Screen Width: ${window.screen.width}px</p>
+                <p>Screen Height: ${window.screen.height}px</p>
+            `;
+        }
+
+        function openNewWindow() {
+            window.open("https://www.example.com", "_blank", "width=600,height=400");
+        }
+
+        function setTimeoutExample() 
+        {
+            let info = document.getElementById("info");
+            info.textContent = "Wait 2 seconds...";
+            window.setTimeout(function() 
+            {
+                info.textContent = "Timeout executed! This message appeared after 2 seconds.";
+            }, 2000);
+        }
+
+        console.log("Window object:", window);
+    </script>
+</body>
+</html>

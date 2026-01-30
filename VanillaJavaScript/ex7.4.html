@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login</title>
+    <style>
+        body 
+        {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        form 
+        {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        input 
+        {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input:focus 
+        {
+            outline: none;
+            border-color: #4CAF50;
+        }
+        button 
+        {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover 
+        {
+            background-color: #45a049;
+        }
+        #message 
+        {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .success 
+        {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error 
+        {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        input.error-border 
+        {
+            border-color: #721c24;
+        }
+        button:disabled 
+        {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    
+    <form id="loginForm" onsubmit="validateForm(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" autocomplete="username" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+        
+        <button type="submit" id="submitBtn">Login</button>
+        
+        <div id="message"></div>
+    </form>
+
+    <script>
+        function validateForm(event) 
+        {
+            event.preventDefault();
+            
+            let username = document.getElementById("username").value.trim();
+            let password = document.getElementById("password").value.trim();
+            let messageDiv = document.getElementById("message");
+            let submitBtn = document.getElementById("submitBtn");
+            let usernameInput = document.getElementById("username");
+            let passwordInput = document.getElementById("password");
+
+            // Remove error styling
+            usernameInput.classList.remove("error-border");
+            passwordInput.classList.remove("error-border");
+
+            // Check if fields are empty
+            if (username === "" || password === "") 
+            {
+                messageDiv.textContent = "Please fill in all fields.";
+                messageDiv.className = "error";
+                if (username === "") {
+                    usernameInput.classList.add("error-border");
+                    usernameInput.focus();
+                } else {
+                    passwordInput.classList.add("error-border");
+                    passwordInput.focus();
+                }
+                return;
+            }
+
+            // Basic validation - username should be at least 3 characters
+            if (username.length < 3) 
+            {
+                messageDiv.textContent = "Username must be at least 3 characters.";
+                messageDiv.className = "error";
+                usernameInput.classList.add("error-border");
+                usernameInput.focus();
+                return;
+            }
+
+            // Basic validation - password should be at least 6 characters
+            if (password.length < 6) 
+            {
+                messageDiv.textContent = "Password must be at least 6 characters.";
+                messageDiv.className = "error";
+                passwordInput.classList.add("error-border");
+                passwordInput.focus();
+                return;
+            }
+
+            // Disable button to prevent double submission
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Logging in...";
+
+            // Validate credentials
+            if (username === "admin" && password === "password123") 
+            {
+                messageDiv.textContent = "Login successful!";
+                messageDiv.className = "success";
+                // Clear form after successful login
+                setTimeout(function() {
+                    document.getElementById("username").value = "";
+                    document.getElementById("password").value = "";
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = "Login";
+                }, 2000);
+            } else 
+            {
+                messageDiv.textContent = "Wrong username or password.";
+                messageDiv.className = "error";
+                // Clear password field on error
+                passwordInput.value = "";
+                passwordInput.focus();
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Login";
+            }
+        }
+
+        // Clear message and error styling when user starts typing
+        document.getElementById("username").addEventListener("input", function() {
+            document.getElementById("message").textContent = "";
+            this.classList.remove("error-border");
+        });
+
+        document.getElementById("password").addEventListener("input", function() {
+            document.getElementById("message").textContent = "";
+            this.classList.remove("error-border");
+        });
+
+        // Focus on username field when page loads
+        window.onload = function() {
+            document.getElementById("username").focus();
+        };
+    </script>
+</body>
+</html>
